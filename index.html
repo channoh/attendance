@@ -52,7 +52,8 @@
             alert(xmlhttp.responseText);
         }
     }
-    xmlhttp.open('GET', 'https://script.google.com/macros/s/AKfycbzcu9zk53LtSs9UO465tKoCnru9lyrB7lKk-YKIEO58zqPf7DM/exec?'+sid+'&seat='+seat, true);
+    var url = 'https://script.google.com/macros/s/AKfycbzcu9zk53LtSs9UO465tKoCnru9lyrB7lKk-YKIEO58zqPf7DM/exec';
+    xmlhttp.open('GET', url+'?sid='+sid+'&seat='+seat, true);
 
 
     xmlhttp.send();
