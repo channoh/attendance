@@ -49,11 +49,11 @@
     }
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            // alert(xmlhttp.responseText);
-            alert("DONE");
+            alert(xmlhttp.responseText);
         }
     }
-    xmlhttp.open('GET', 'https://script.google.com/macros/s/AKfycbzcu9zk53LtSs9UO465tKoCnru9lyrB7lKk-YKIEO58zqPf7DM/exec?sid='+sid+'&seat='+seat, true);
+    xmlhttp.open('GET', 'https://script.google.com/macros/s/AKfycbzcu9zk53LtSs9UO465tKoCnru9lyrB7lKk-YKIEO58zqPf7DM/exec?'+sid+'&seat='+seat, true);
+
 
     xmlhttp.send();
   }
