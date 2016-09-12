@@ -48,12 +48,12 @@
     }
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            console.log(xmlhttp.responseText);
+            // console.log(xmlhttp.responseText);
             alert(xmlhttp.responseText);
         }
     }
     var url = 'https://script.google.com/macros/s/AKfycbzcu9zk53LtSs9UO465tKoCnru9lyrB7lKk-YKIEO58zqPf7DM/exec';
-    console.log(url+'?sid='+sid+'&seat='+seat);
+    // console.log(url+'?sid='+sid+'&seat='+seat);
     xmlhttp.open('GET', url+'?sid='+sid+'&seat='+seat, true);
 
 
