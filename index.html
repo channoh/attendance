@@ -17,9 +17,6 @@
       opt.value = classes[i].id;
       opt.text = classes[i].name;
       document.getElementById('course').add(opt);
-      // document.getElementById('course').innerHTML+="<option value=\""+classes[i].id+"\">"+classes[i].name+"</option>";
-      // if (DATE[classes[i].date] == <?=date('w')?> && classes[i].time <= <?=date('G')?>)
-        // document.getElementById('course').options[i].selected = true;
     }
   }
 
@@ -55,7 +52,10 @@
             alert(xmlhttp.responseText);
         }
     }
-    xmlhttp.open('GET', 'lib/setSeat.php?course='+course+'&sid='+sid+'&seat='+seat, true);
+    var url = 'https://script.google.com/macros/s/AKfycbzcu9zk53LtSs9UO465tKoCnru9lyrB7lKk-YKIEO58zqPf7DM/exec';
+    xmlhttp.open('GET', url+'?sid='+sid+'&seat='+seat, true);
+
+
     xmlhttp.send();
   }
 
