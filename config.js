@@ -1,3 +1,3 @@
 var classes= [
-    { name: "Computer Architecture", id: "CA", seats: [[4,7,4], 8]}
+    { name: "Data Structure", id: "DS", seats: [[4,7,4], 8]}
 ];
